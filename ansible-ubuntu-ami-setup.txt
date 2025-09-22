@@ -37,7 +37,7 @@ ssh <private IP of host>
 STEP5- update inventory file , create a host group and add host IPs to the group
 cd
 ll
-vi /etc/ansible/hosts
+sudo vi /etc/ansible/hosts
 [myhosts]
 172.31.38.127
 172.31.45.115
