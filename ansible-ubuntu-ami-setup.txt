@@ -2,6 +2,7 @@ sudo hostnamectl set-hostname <hostname>
 Install ansible on contoller:
 STEP 0-
 sudo su
+cd
 sudo apt update
 sudo apt install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible
@@ -16,6 +17,7 @@ sudo su
 useradd -m ansible
 passwd ansible
 echo "ansible ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ansible
+sudo su - ansible
 
 STEP2- Switch to ansible user
 generate key pair using below command. This would generate a private and a public key inside .ssh directory:
