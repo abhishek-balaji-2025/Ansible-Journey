@@ -42,6 +42,7 @@ sudo vi /etc/ansible/hosts
 172.31.38.127
 172.31.45.115
 
+cd .ssh/
 
 Ansible Adhoc commands:
 ansible --inventory /etc/ansible/hosts myhosts -m ping
